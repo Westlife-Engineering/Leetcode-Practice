@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "调试 playground",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/练习/playground.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/练习",
+      "preLaunchTask": "编译 playground（调试）",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/ZENGZX/Desktop/Leetcode/练习",
+      "program": "c:/Users/ZENGZX/Desktop/Leetcode/练习/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

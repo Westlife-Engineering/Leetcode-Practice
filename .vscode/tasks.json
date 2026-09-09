@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "编译并运行 playground",
+      "type": "process",
+      "command": "${workspaceFolder}/.vscode/run-playground.bat",
+      "options": {
+        "cwd": "${workspaceFolder}/练习"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "编译 playground（调试）",
+      "type": "process",
+      "command": "${workspaceFolder}/.vscode/run-playground.bat",
+      "args": ["debug"],
+      "options": {
+        "cwd": "${workspaceFolder}/练习"
+      },
+      "group": "build",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "showReuseMessage": false
+      },
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}
